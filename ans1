@@ -1,1 +1,7 @@
 https://www.db-fiddle.com/f/k623T9fJMGwFyo9qBe8qi6/0
+
+select a1.trans_date,a1.product_id,sum(a2.spend) as cumsum
+from total_transactions a1 join total_transactions a2
+on a1.product_id = a2.product_id
+where a1.trans_date >= a2.trans_date
+group by a1.product_id,a1.trans_date
