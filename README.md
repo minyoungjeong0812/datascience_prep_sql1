@@ -9,7 +9,8 @@ Here's today's problem:
 This problem was asked by Uber.
 
 Assume you are given the below table for spending activity by product type. Write a query to calculate the cumulative spend for each product over time in chronological order.
-total_transactions
+
+### total_transactions
 column_name 	type
 order_id 	integer
 user_id 	integer
